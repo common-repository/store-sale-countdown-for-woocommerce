@@ -1,0 +1,74 @@
+.button.wc-reload.active:after {
+    font-family: WooCommerce;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    margin: 0;
+    text-indent: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    line-height: 22px;
+    color: red;
+}
+.checkbox{
+    display:none
+}
+.rllc_woosales_switch{
+    width: 45px;
+    height: 27px;
+    background: #E5E5E5;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius:16px;
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+}
+.rllc_woosales_switch:before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #cba;
+    z-index: 1;
+    border-radius:16px;
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+}
+.rllc_woosales_switch:after {
+    content: ' ';
+    height: 22px;
+    width: 22px;
+    border-radius: 28px;
+    background: #FFFFFF;
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    left: 2px;
+    box-shadow: 0 2px 5px #999999;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-box-shadow: 0 2px 5px #999999;
+}
+.on,
+.on:before{
+    background: #007cba !important;
+}
+.on:after{
+    left: 21px !important;
+}
+.woosales_table .status label{
+    display: inline-block;
+}
+.woosales_table .status label input{
+    display: none;
+}
